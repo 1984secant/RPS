@@ -3,16 +3,16 @@ let submit = document.getElementById("submit");
 let namebox = document.getElementById("player");
 
 let decide = document.getElementById("decision");
-let message = document.getElementById("welcome");
+// let message = document.getElementById("welcome");
 
-decide.addEventListener('click', send);
+// decide.addEventListener('click', send);
 submit.addEventListener('click', welcome);
 
 let compDecisions = ["rock","paper","scissors"]
-function send(){
-    //unknown
-}
+// function send(){
+//     //unknown
+// }
 
 function welcome(){
-    message.innerHTML = ("WELCOME TO THE GAME, " + namebox.value);
+    document.getElementById("message").innerText = ("WELCOME TO THE GAME, MANAGER " + namebox.value + ".");
 }
