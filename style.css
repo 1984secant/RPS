@@ -14,8 +14,12 @@
      background: #9e9e9e;
     text-align: center;
     font-size: 30px;
-    padding: 50px;
-    margin: 100px;
+   
+}
+
+.container {
+     padding: 20px;
+    
 }
 /* #upper {
    background:#8049e0 ;

@@ -10,10 +10,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    
     <div class="header">
         <p>R. P. S.</p>
     </div>
-   
+   <div class="container">
    <form class="userForm">
      <div class="input">
          <input type="text" class="input-field" id="player" required/>
@@ -24,10 +25,19 @@
    </form>
     <button type="button" id="lightswitch">LIGHT SWITCH</button>
    <p id="message"></p>
-       <br><br><br>
-       <p>mr krabs i have an ideaaaaaaaaaaaaaaaaaaaaaaa</p>
+       <br>
+       <div class="scoresChoices">
+            <p id="userSelect">YOUR CHOICE : <p id="userChoice"> </p> </p>
+            <p id="compSelect">COMPUTER CHOICE : <p id="compChoice"> </p> </p>
+            <p id="userScore">-</p>
+            <p id="compScore">-</p>
+            <p id="results">UNDECIDED</p>
+       </div>
+       <br><br>
+       <p>wip, will only be implemented if i have time (see console)</p>
    <!-- <div id="peoples">
-    <select name="you" id="idenities">
+    //this is gonna be like, who you are playing as and Against. thisll work when uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    <select name="you" id="idenities"c>
          <div class="col-12 col-sm-6 col-lg-3">
                     <div class="card h-100">
                         <img src="https://files.catbox.moe/7asc8g.png" class="card-img-top">
@@ -35,13 +45,14 @@
                 </div>
     </select>
    </div> -->
-
+    <button id="reset">RESTART</button>
+    <br><br>
      <div class="row g-3" id="choices">
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="card h-100">
                         <img src="https://files.catbox.moe/gf99do.png" class="card-img-top">
                         <div class="card-body">
-                            <a href="#"  id="decide" class="btn btn-primary">ROCK</a>
+                            <a href="#"  id="decision" class="btn btn-primary rock" value="ROCK">ROCK</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +61,7 @@
                     <div class="card h-100">
                         <img src="https://files.catbox.moe/7asc8g.png" class="card-img-top">
                         <div class="card-body">
-                            <a href="#"  id="decide" class="btn btn-primary">PAPER</a>
+                            <a href="#"  id="decision" class="btn btn-primary paper" value="PAPER">PAPER</a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +70,7 @@
                     <div class="card h-100">
                         <img src="https://files.catbox.moe/bm1t8v.png" class="card-img-top">
                         <div class="card-body">
-                            <a href="#" id="decide" class="btn btn-primary">SCISSORS</a>
+                            <a href="#" id="decision" class="btn btn-primary scissors" value="SCISSORS">SCISSORS</a>
                         </div>
                     </div>
                 </div>
@@ -67,6 +78,7 @@
         </div>
     </div>
       <br><br><br>
+    </div>
 <!-- 
    <button type="button" class="rps" id="decision rock">ROCK</button>
    <button type="button" class="rps" id="decision paper">PAPER</button>
