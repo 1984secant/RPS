@@ -21,38 +21,19 @@
      padding: 20px;
     
 }
-/* #upper {
-   background:#8049e0 ;
-   padding: 50px;
+
+.computer {
+    text-align: right;
+    font-family: 'Courier New', monospace;
+
 }
 
-.custom-btn {
-    background-color:#FFFFff;
-    color: #000000;
+.user {
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+
 }
 
-#sect1 {
-    background-color: white;
+.ricardo {
+    text-align: center;
 }
-#sect2 {
-    background-color: #f3f3f5;
-}
-#sect3 {
-    background-color: white;
-}
-#sect4 {
-    background-color: #f3f3f5;
-}
-footer {
-    background-color: #364252;
-}
-form{
-    border-radius: 4px;
-    background-color: white;
-}
-#main-img {
-    height: 10px;
-    max-width: 
-    border-radius: 30px;
-    
-} */
