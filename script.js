@@ -27,6 +27,6 @@ function choice(){
 }
 
 function welcome(){
-    document.getElementById("message").innerText = ("WELCOME TO THE GAME, MANAGER " + namebox.value + ".");
+    document.getElementById("message").innerText = ("WELCOME TO THE GAME, MANAGER " + namebox.value.toUpperCase() + ".");
 }
 
