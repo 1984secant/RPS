@@ -3,12 +3,15 @@ alert("welcome. this is R.P.S. (rock paper scissors) enter your username in the 
 //create an event listener for the submit button for it to, on click, remove the field and replace it with a welcome message and then display the rest of the page(?)
 let submit = document.getElementById("submit");
 let namebox = document.getElementById("player");
+let reset = document.getElementById("clear");
 
 let decide = document.getElementById("decision");
 // let message = document.getElementById("welcome");
 
 decide.addEventListener('click', choice);
 submit.addEventListener('click', welcome);
+reset.addEventListener('click', refresh);
+
 
 // let compDecisions = ["rock","paper","scissors"] man i dont know
 
@@ -30,3 +33,6 @@ function welcome(){
     document.getElementById("message").innerText = ("WELCOME TO THE GAME, MANAGER " + namebox.value.toUpperCase() + ".");
 }
 
+  function refresh(){
+    window.location.reload();
+  }

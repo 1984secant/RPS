@@ -4,6 +4,7 @@
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
 
+
 .header {
     background: #9e9e9e;
     text-align: center;
@@ -25,6 +26,7 @@
 .computer {
     text-align: right;
     font-family: 'Courier New', monospace;
+   
 
 }
 
@@ -32,9 +34,5 @@
     text-align: left;
     font-family: 'Trebuchet MS', sans-serif;
 
-}
-
-.ricardo {
-    text-align: center;
 }
 
