@@ -1,4 +1,4 @@
-alert("welcome. this is R.P.S. (rock paper scissors) enter your username in the box and press enter, then start the game. simply choose rock paper or scissors and the computer will make it's move once you do. the computer's choice will be displayed alongside the verdict. to restart, click the restart button (refreshes the whole page for simplicity's sake)");
+// alert("welcome. this is R.P.S. (rock paper scissors) enter your username in the box and press enter, then start the game. simply choose rock paper or scissors and the computer will make it's move once you do. the computer's choice will be displayed alongside the verdict. to restart, click the restart button (refreshes the whole page for simplicity's sake)");
 
 //create an event listener for the submit button for it to, on click, remove the field and replace it with a welcome message and then display the rest of the page(?)
 let submit = document.getElementById("submit");

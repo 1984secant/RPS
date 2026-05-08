@@ -45,12 +45,9 @@
                         <p class="computer" id="compScore">-</p>
                         <img class="StoryLog_Limbus_Ricard float-right" src="https://static.wikitide.net/projectmoonwiki/a/a3/StoryLog_Limbus_Ricardo.webp">
         </div>
-        <!-- <p class="user" id="userSelect">YOUR CHOICE : <p id="userChoice"> </p> </p>
-            <p class="computer" id="compSelect">COMPUTER CHOICE : <p id="compChoice"> </p> </p>
-            <p id="userScore">-</p>
-            <p class="computer" id="compScore">-</p>
-            <p id="results">UNDECIDED</p> -->
-       </div><br>
+       </div><br><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#instructionsModal">
+            Show Instructions
+        </button>
     <button type="button" class="btn btn-secondary" id="clear">RESTART</button>
     <br><br>
      <div class="row g-3" id="choices">
@@ -85,30 +82,35 @@
     </div>
       <br><br><br>
     </div>
-<!-- 
-   <button type="button" class="rps" id="decision rock">ROCK</button>
-   <button type="button" class="rps" id="decision paper">PAPER</button>
-   <button type="button" class="rps" id="decision scissors">SCISSORS</button> -->
+<div class="container">
 
-   <!-- <table row="1" col="3">
-    <tr>
-      <td class="card mb-03">
-         <img class="ft-pets" src="https://files.catbox.moe/gf99do.png">
-            <button type="button" class="btn btn-info">ROCK</button>
-      </td>
-    </tr>
-    <tr>
-      <td class="card mb-03">
-         <img class="ft-pets" src="https://files.catbox.moe/7asc8g.png">
-            <button type="button" class="btn btn-info">PAPER</button>
-      </td>
-    </tr>
-    <tr>
-       <td class="card mb-03">
-         <img class="ft-pets" src="https://files.catbox.moe/bm1t8v.png">
-            <button type="button" class="btn btn-info">SCISSORS</button>
-      </td>
-    </tr>
-   </table> -->
+        <!-- Button trigger modal -->
+        
+        <!-- Modal -->
+        <div class="modal fade" id="instructionsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="instructionsModalLabel" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="instructionsModalLabel"><strong>H.T.P.</strong></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        welcome. this is R.P.S. (rock paper scissors) enter your username in the box and press enter, then start the game. simply choose rock paper or scissors and the computer will make it's move once you do. the computer's choice will be displayed alongside the verdict. to restart, click the restart button (refreshes the whole page for simplicity's sake)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var instructionsModal = new bootstrap.Modal(document.getElementById('instructionsModal'));
+            instructionsModal.show();
+        });
+    </script>
+
     <script src="script.js"></script>
   </body>
